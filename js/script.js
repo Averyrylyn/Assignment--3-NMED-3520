@@ -16,18 +16,18 @@ document.title = "Assignment #3"
 
 //https://dev.to/stewyearth/making-a-simple-counter-in-javascript-html-2ici//
 
-var counter = 0;
+let counter = 0;
 
 function changecounter () {
     console.log(counter);
     if (counter <= 6){
     counter++
-    }
-    else {
+}
+else {
     counter = 0;
-    }
+}
     $(".counter-display").text(counter);
-}}
+}
 
 
 
@@ -52,4 +52,6 @@ $("#Mouse3").on("click", changecounter)
 $("#Mouse4").on("click", changecounter)
 $("#Mouse5").on("click", changecounter)
 $("#Mouse6").on("click", changecounter)
+
+
 
