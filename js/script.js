@@ -16,12 +16,16 @@ document.title = "Assignment #3"
 
 //https://dev.to/stewyearth/making-a-simple-counter-in-javascript-html-2ici//
 
-let counter = 0;
+var counter = 0;
 
 function changecounter () {
     console.log(counter);
-    while (counter <= 0){
-    counter=counter + 1 
+    if (counter <= 6){
+    counter++
+    }
+    else {
+    counter = 0;
+    }
     $(".counter-display").text(counter);
 }}
 
